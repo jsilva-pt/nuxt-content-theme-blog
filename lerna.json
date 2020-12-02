@@ -8,9 +8,9 @@
   ],
   "command": {
     "publish": {
+      "message": "chore(release): publish %s",
       "registry": "https://npm.pkg.github.com",
-      "conventionalCommits": true, 
-       "yes": true
+      "conventionalCommits": true
     }
   }
 }
