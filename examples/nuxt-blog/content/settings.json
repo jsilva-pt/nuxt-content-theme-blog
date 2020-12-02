@@ -1,0 +1,50 @@
+{
+  "repository": {
+    "url": "https://github.com/jsilva-pt/nuxt-content-theme-blog/",
+    "defaultBranch": "main"
+  },
+  "footerLinks": {
+    "discover": [
+      {
+        "key": "footer.links.discover.ourTeam",
+        "href": "https://nuxtjs.org/team"
+      },
+      {
+        "key": "footer.links.discover.designKit",
+        "href": "https://nuxtjs.org/design"
+      },
+      {
+        "key": "footer.links.discover.contactUs",
+        "href": "https://twitter.com/nuxt_js"
+      }
+    ],
+    "help": [
+      {
+        "key": "footer.links.help.resources",
+        "href": "https://nuxtjs.org/faq"
+      },
+      {
+        "key": "footer.links.help.chatWithUs",
+        "href": "https://discord.nuxtjs.org"
+      },
+      {
+        "key": "footer.links.help.contributionGuide",
+        "href": "https://github.com/nuxt/nuxtjs.org/blob/master/content/en/_archives/guide/contribution-guide.md"
+      }
+    ],
+    "support": [
+      {
+        "key": "footer.links.support.store",
+        "href": "https://nuxtjs.org/shop"
+      },
+      {
+        "key": "footer.links.support.sponsor",
+        "href": "https://nuxtjs.org/sponsor-nuxtjs"
+      },
+      {
+        "key": "footer.links.support.training",
+        "href": "https://nuxtjs.org/support"
+      }
+    ]
+  }
+}
