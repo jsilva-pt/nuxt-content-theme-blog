@@ -8,7 +8,9 @@
   ],
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com"
+      "registry": "https://npm.pkg.github.com",
+      "conventionalCommits": true, 
+       "yes": true
     }
   }
 }
