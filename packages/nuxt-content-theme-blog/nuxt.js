@@ -78,8 +78,8 @@ const defaultConfig = () => ({
 
   buildModules: [
     themeModule,
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
+    // '@nuxtjs/eslint-module',
+    // '@nuxtjs/stylelint-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',

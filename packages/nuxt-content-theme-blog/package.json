@@ -10,7 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "@nuxt/content": "^1.10.0",
+    "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/feed": "^2.0.0",
+    "@nuxtjs/google-fonts": "1.2.0",
+    "@nuxtjs/pwa": "^3.2.2",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/svg": "^0.1.12",
@@ -20,15 +23,10 @@
     "defu": "^3.2.2",
     "nuxt-i18n": "^6.15.4",
     "prism-themes": "^1.5.0",
-    "vue-observe-visibility": "^0.4.6",
-    "vue-social-sharing": "^3.0.3"
-  },
-  "devDependencies": {
-    "@nuxtjs/color-mode": "^2.0.0",
-    "@nuxtjs/google-fonts": "1.2.0",
-    "@nuxtjs/pwa": "^3.2.2",
     "reading-time": "^1.2.0",
     "sass": "^1.29.0",
-    "sass-loader": "^10.1.0"
+    "sass-loader": "^10.1.0",
+    "vue-observe-visibility": "^0.4.6",
+    "vue-social-sharing": "^3.0.3"
   }
 }
