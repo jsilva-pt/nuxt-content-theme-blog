@@ -2,15 +2,12 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "conventionalCommits": true,
-  "packages": [
-    "packages/*"
-  ],
   "command": {
-    "publish": {
-      "message": "chore(release): publish %s",
-      "registry": "https://npm.pkg.github.com",
-      "conventionalCommits": true
+    "version": {
+      "allowBranch": "main",
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "private": false
     }
   }
 }
