@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.1.1...@jsilva-pt/nuxt-content-theme-blog@0.1.2) (2020-12-03)
+
+
+### Bug Fixes
+
+* seo fixes and improvements ([508b6e4](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/508b6e46a49a5ae655991161325bef3ad9ea935d))
+
+
+
+
+
 ## [0.1.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.1.0...@jsilva-pt/nuxt-content-theme-blog@0.1.1) (2020-12-02)
 
 
