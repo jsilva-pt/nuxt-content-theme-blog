@@ -1,26 +1,9 @@
-export function metaGeneric(
-  title,
-  description,
-  url,
-  socialImage,
-  socialImageAlt
-) {
+export function metaGeneric(title, description, url) {
   return [
     {
       hid: 'description',
       name: 'description',
       content: description,
-    },
-    {
-      hid: 'author',
-      name: 'author',
-      content: 'José Silva',
-    },
-    // Open Graph
-    {
-      hid: 'og:type',
-      property: 'og:type',
-      content: 'website',
     },
     {
       hid: 'og:title',
@@ -36,37 +19,6 @@ export function metaGeneric(
       hid: 'og:url',
       property: 'og:url',
       content: url,
-    },
-    {
-      hid: 'og:image',
-      property: 'og:image',
-      content: socialImage,
-    },
-    // Twitter Card
-    {
-      hid: 'twitter:card',
-      name: 'twitter:card',
-      content: 'summary_large_image',
-    },
-    {
-      hid: 'twitter:title',
-      name: 'twitter:title',
-      content: title,
-    },
-    {
-      hid: 'twitter:description',
-      name: 'twitter:description',
-      content: description,
-    },
-    {
-      hid: 'twitter:image',
-      name: 'twitter:image',
-      content: socialImage,
-    },
-    {
-      hid: 'twitter:image:',
-      name: 'twitter:image:alt',
-      content: socialImageAlt,
     },
   ]
 }

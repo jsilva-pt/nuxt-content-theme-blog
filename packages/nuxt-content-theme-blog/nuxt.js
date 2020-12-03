@@ -51,13 +51,7 @@ const defaultConfig = () => ({
   target: 'static',
   ssr: true,
   srcDir: __dirname,
-
   head: {
-    title: 'app',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    ],
     bodyAttrs: {
       class: [
         'font-sans font-medium bg-light-surface dark:bg-dark-surface text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary transition-colors duration-300 ease-linear',

@@ -22,6 +22,7 @@
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
+          aria-label="linkedin"
         >
           <IconLinkedin class="w-6 h-6" />
         </a>
@@ -32,6 +33,7 @@
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
+          aria-label="twitter"
         >
           <IconTwitter class="w-6 h-6" />
         </a>
@@ -42,6 +44,7 @@
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
+          aria-label="github"
         >
           <IconGithub class="w-6 h-6" />
         </a>

@@ -35,13 +35,8 @@ export default {
     const description = this.$i18n.t('meta.description')
     return {
       title,
-      meta: [
-        ...metaGeneric(
-          title,
-          description,
-          this.$store.state.settings.socialImage
-        ),
-      ],
+      titleTemplate: '%s',
+      meta: [...metaGeneric(title, description)],
     }
   },
 }

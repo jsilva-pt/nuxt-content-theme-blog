@@ -40,6 +40,23 @@ export default {
       next,
     }
   },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        ...metaGeneric(
+          this.post.title,
+          this.post.description,
+          this.$config.baseUrl + this.$route.fullPath
+        ),
+        ...metaArticle(
+          this.post.author,
+          this.post.publishedTime,
+          this.post.modifiedTime
+        ),
+      ],
+    }
+  },
   computed: {
     docLink() {
       return `${this.$store.state.settings.repository.url}blob/${this.$store.state.settings.repository.defaultBranch}/content${this.post.path}${this.post.extension}`
@@ -52,25 +69,6 @@ export default {
       const CopyButton = Vue.extend(AppCopyButton)
       const component = new CopyButton().$mount()
       block.appendChild(component.$el)
-    }
-  },
-  head() {
-    return {
-      title: this.post.title,
-      titleTemplate: `%s - ${this.$store.state.settings.name}`,
-      meta: [
-        ...metaGeneric(
-          this.post.title,
-          this.post.description,
-          this.socialImage,
-          this.$t('blogPost.imgAlt')
-        ),
-        ...metaArticle(
-          this.post.author,
-          this.post.publishedTime,
-          this.post.modifiedTime
-        ),
-      ],
     }
   },
 }

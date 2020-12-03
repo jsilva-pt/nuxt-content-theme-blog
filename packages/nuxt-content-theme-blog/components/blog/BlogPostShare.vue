@@ -13,8 +13,9 @@
       :hashtags="['MyTechBlog'].concat(hashtags).join(',')"
       class="cursor-pointer inline-block p-3"
       :twitter-user="$store.state.settings.social.twitter"
+      :aria-label="network.id"
     >
-      <component :is="network.icon" width="24" height="24" :alt="network" />
+      <component :is="network.icon" width="24" height="24" />
     </ShareNetwork>
   </div>
 </template>
@@ -44,8 +45,7 @@ export default {
         { id: 'twitter', icon: 'IconTwitter' },
         { id: 'linkedin', icon: 'IconLinkedin' },
       ],
-      currentUrl:
-        this.$store.state.settings.productionDomain + this.$route.path,
+      currentUrl: this.$config.baseUrl + this.$route.fullPath,
     }
   },
 }
