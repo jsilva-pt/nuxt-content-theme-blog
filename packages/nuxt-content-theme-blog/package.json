@@ -1,6 +1,6 @@
 {
   "name": "@jsilva-pt/nuxt-content-theme-blog",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A blog theme for NuxtJS Content",
   "main": "nuxt.js",
   "publishConfig": {
