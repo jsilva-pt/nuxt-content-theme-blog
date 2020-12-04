@@ -63,7 +63,7 @@
           <span
             class="light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary transition-colors duration-300 ease-linear"
           >
-            {{ formatDateByLocale(post.date) }}
+            {{ formatDateByLocale(post.publishedTime) }}
           </span>
           <span
             class="hidden lg:inline-block text-xs mx-2 light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary transition-colors duration-300 ease-linear"

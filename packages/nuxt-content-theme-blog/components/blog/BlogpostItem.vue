@@ -16,7 +16,7 @@
           <div
             class="mt-1 dark:text-dark-onSurfaceSecondary light:text-light-onSurfaceSecondary"
           >
-            {{ formatDateByLocale(post.date) }}
+            {{ formatDateByLocale(post.publishedTime) }}
             <span class="text-xs mx-1">&bullet;</span>
             {{ post.readingTime.text }}
           </div>
