@@ -2,7 +2,7 @@
 title: 'Create a Blog with Nuxt Content'
 description: 'The Content module is a git files based headless CMS that provides powerful features when it comes to write blogs, documentation sites or just adding content to any regular website. In this post we will go through most of the benefits of this module and discover how we can create a blog with it.'
 imgUrl: blog/creating-blog-with-nuxt-content/main.png
-date: 2020-07-02
+publishedTime: 2020-07-02
 authors:
   - name: "Debbie O'Brien"
     avatarUrl: https://pbs.twimg.com/profile_images/1252900852156772352/JLIVJ-TC_400x400.jpg

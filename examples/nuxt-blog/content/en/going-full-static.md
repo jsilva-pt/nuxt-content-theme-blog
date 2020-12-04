@@ -2,7 +2,7 @@
 title: 'Going Full Static'
 description: 'Long awaited features for Jamstack fans has been shipped in v2.13: full static export, improved smart prefetching, integrated crawler, faster re-deploy, built-in web server and new target option for config :zap:️'
 imgUrl: blog/going-full-static/main.png
-date: 2020-06-18
+publishedTime: 2020-06-18
 authors:
   - name: Sebastien Chopin
     avatarUrl: https://pbs.twimg.com/profile_images/1042510623962275840/1Iw_Mvud_400x400.jpg
