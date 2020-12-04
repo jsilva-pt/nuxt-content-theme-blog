@@ -2,12 +2,6 @@ import defu from 'defu'
 
 export const state = () => ({
   settings: {
-    author: {
-      name: '',
-    },
-    welcome: {
-      img: '/welcome.png',
-    },
     noResults: {
       img: '/no-results.png',
     },
@@ -17,6 +11,7 @@ export const state = () => ({
     social: {
       showOnHeader: false,
       shareEnabled: false,
+      defaultHashtags: [],
       github: '',
       linkedin: '',
       twitter: '',

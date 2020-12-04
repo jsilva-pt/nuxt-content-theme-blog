@@ -10,7 +10,9 @@
       :url="currentUrl"
       :title="title"
       :description="description"
-      :hashtags="['MyTechBlog'].concat(hashtags).join(',')"
+      :hashtags="
+        $store.app.settings.social.defaultHashtags.concat(hashtags).join(',')
+      "
       class="cursor-pointer inline-block p-3"
       :twitter-user="$store.state.settings.social.twitter"
       :aria-label="network.id"

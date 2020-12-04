@@ -6,7 +6,7 @@
         tag="h1"
         class="text-3xl xl:text-4xl text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary font-medium leading-normal mb-6 lg:pt-4"
       >
-        <template v-slot:nuxt>
+        <template #nuxt>
           <AppTitle />
         </template>
       </i18n>
@@ -16,7 +16,7 @@
         tag="h3"
         class="xl:text-lg light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary font-medium leading-relaxed mb-6"
       >
-        <template v-slot:nuxtTeam>
+        <template #nuxtTeam>
           <a
             class="text-nuxt-green underline"
             href="https://nuxtjs.org/team#nuxtCompany"
@@ -24,7 +24,7 @@
             {{ $t('welcome.nuxt_team') }}
           </a>
         </template>
-        <template v-slot:nuxtCommunity>
+        <template #nuxtCommunity>
           <a
             class="text-nuxt-green underline"
             href="https://nuxtjs.org/team#nuxtCommunity"

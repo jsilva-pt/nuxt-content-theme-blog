@@ -47,7 +47,37 @@ function themeModule() {
   })
 }
 
-const defaultConfig = () => ({
+const createFeedArticles = async (feed, { baseUrl, feedOptions }) => {
+  feed.options = feedOptions
+
+  const { $content } = require('@nuxt/content')
+  const blogPosts = await $content('en').sortBy('date', 'desc').fetch()
+
+  blogPosts.forEach((blogPost) => {
+    const url = `${baseUrl}/${blogPost.slug}`
+    const author =
+      blogPost.author &&
+      blogPost.author.map((el) => {
+        return {
+          name: el.name,
+          email: el.email,
+          link: el.link,
+        }
+      })
+
+    feed.addItem({
+      title: blogPost.title,
+      id: url,
+      link: url,
+      date: new Date(blogPost.publishedTime),
+      description: blogPost.description,
+      content: blogPost.description,
+      author,
+    })
+  })
+}
+
+const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
   target: 'static',
   ssr: true,
   srcDir: __dirname,
@@ -81,13 +111,14 @@ const defaultConfig = () => ({
     '@nuxtjs/pwa',
   ],
 
-  modules: ['vue-social-sharing/nuxt', 'nuxt-i18n', '@nuxt/content'],
-
-  pwa: {
-    manifest: {
-      name: 'MyTechBlog',
-    },
-  },
+  modules: [
+    'vue-social-sharing/nuxt',
+    'nuxt-i18n',
+    '@nuxt/content',
+    '@nuxtjs/feed',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+  ],
 
   colorMode: {
     preference: 'light',
@@ -102,18 +133,59 @@ const defaultConfig = () => ({
   },
 
   i18n: {
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        file: 'en-US.js',
-        name: 'English',
-      },
-    ],
-    defaultLocale: 'en',
+    locales,
+    defaultLocale,
     parsePages: false,
     lazy: false,
     seo: false,
+  },
+
+  feed: [
+    {
+      path: '/feed.xml',
+      create: createFeedArticles,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+      data: { baseUrl, feedOptions },
+    },
+  ],
+
+  sitemap: {
+    hostname: baseUrl,
+    i18n: true,
+    gzip: true,
+    routes: async () => {
+      const { $content } = require('@nuxt/content')
+
+      const routes = []
+      const blogPosts = await $content('en').fetch()
+
+      blogPosts.forEach((blogPost) => {
+        locales.forEach((locale) => {
+          routes.push({
+            url:
+              locale.code === defaultLocale
+                ? `${blogPost.slug}`
+                : `${locale.code}/${blogPost.slug}`,
+            links: locales.map((alternateLocale) => {
+              return {
+                lang: alternateLocale.code,
+                url:
+                  alternateLocale.code === defaultLocale
+                    ? `${blogPost.slug}`
+                    : `${alternateLocale.code}/${blogPost.slug}`,
+              }
+            }),
+          })
+        })
+      })
+
+      return routes
+    },
+  },
+
+  robots: {
+    Sitemap: `${baseUrl}/sitemap.xml`,
   },
 
   tailwindcss: {},
@@ -129,6 +201,26 @@ const defaultConfig = () => ({
 })
 
 export default function (appConfigs) {
-  const config = defu.arrayFn(appConfigs, defaultConfig())
+  const {
+    publicRuntimeConfig: { baseUrl },
+    feedOptions,
+    i18n: {
+      locales = [
+        {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en-US.js',
+          name: 'English',
+        },
+      ],
+      defaultLocale = 'en',
+    },
+  } = appConfigs
+
+  const config = defu.arrayFn(
+    appConfigs,
+    defaultConfig({ baseUrl, feedOptions, locales, defaultLocale })
+  )
+
   return config
 }
