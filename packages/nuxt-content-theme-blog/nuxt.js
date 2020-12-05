@@ -32,12 +32,16 @@ function themeModule() {
     })
   })
 
-  options.tailwindcss.configPath =
-    options.tailwindcss.configPath ||
-    path.resolve(options.rootDir, 'tailwind.config.js')
-  options.tailwindcss.cssPath =
-    options.tailwindcss.cssPath ||
-    path.resolve(options.rootDir, options.dir.assets, 'css', 'tailwind.css')
+  options.tailwindcss.configPath = path.resolve(
+    options.srcDir,
+    'tailwind.config.js'
+  )
+  options.tailwindcss.cssPath = path.resolve(
+    options.srcDir,
+    options.dir.assets,
+    'css',
+    'tailwind.css'
+  )
 
   hook('tailwindcss:config', function (defaultTailwindConfig) {
     Object.assign(
@@ -96,7 +100,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
     routes: ['/'],
   },
 
-  css: ['~/assets/css/main.scss'],
+  css: ['~/assets/css/content.scss'],
 
   plugins: ['~/plugins/init.js', '~/plugins/vue-observe-visibility.js'],
 
@@ -119,6 +123,15 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
+
+  googleFonts: {
+    families: {
+      Quicksand: {
+        wght: [400, 500, 600, 700],
+      },
+    },
+    display: 'swap',
+  },
 
   colorMode: {
     preference: 'light',
