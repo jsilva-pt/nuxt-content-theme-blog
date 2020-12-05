@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.2.2...@jsilva-pt/nuxt-content-theme-blog@0.2.3) (2020-12-05)
+
+
+### Bug Fixes
+
+* google font ([5402b4b](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/5402b4b37d42345a9d809b80490291610815234b))
+
+
+
+
+
 ## [0.2.2](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.2.1...@jsilva-pt/nuxt-content-theme-blog@0.2.2) (2020-12-04)
 
 
