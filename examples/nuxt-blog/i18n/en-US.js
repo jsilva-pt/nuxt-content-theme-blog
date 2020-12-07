@@ -1,7 +1,6 @@
 module.exports = {
   light: 'Light',
   dark: 'Dark',
-  blog: 'Blog',
   meta: {
     title: 'NuxtJS Blog',
     description:
@@ -25,9 +24,6 @@ module.exports = {
       1: "Sorry but I haven't written any article for the criteria you inserted.",
       2: 'If you would like me to write about a specific theme please email me the suggestion.',
     },
-  },
-  blogPost: {
-    imgAlt: 'Blog Post Image',
   },
   footer: {
     links: {

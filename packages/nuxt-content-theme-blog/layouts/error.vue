@@ -1,6 +1,6 @@
 <template>
   <div class="w-full dark:border-gray-800">
-    <AppStatus v-if="error.statusCode === 404" code="pageNotFound" />
+    <PageNotFound v-if="error.statusCode === 404" />
     <h1 v-else class="text-4xl font-black mb-4 leading-none">
       {{ error.message }}
     </h1>

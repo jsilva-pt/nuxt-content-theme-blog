@@ -3,7 +3,7 @@
     class="flex flex-col sm:flex-row text-center sm:text-left items-start content-center justify-between pt-10 sm:py-10"
   >
     <nav
-      v-for="(l, title, index) in $store.state.settings.footerLinks"
+      v-for="(l, title, index) in $config.footerLinks"
       :key="title"
       class="flex-1 w-full sm:w-auto mb-8 sm:mb-0"
       :class="{

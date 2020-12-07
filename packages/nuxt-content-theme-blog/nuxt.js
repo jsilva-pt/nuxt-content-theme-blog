@@ -102,7 +102,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
 
   css: ['~/assets/css/content.scss'],
 
-  plugins: ['~/plugins/init.js', '~/plugins/vue-observe-visibility.js'],
+  plugins: ['~/plugins/vue-observe-visibility.js'],
 
   buildModules: [
     themeModule,
@@ -227,7 +227,7 @@ export default function (appConfigs) {
         },
       ],
       defaultLocale = 'en',
-    },
+    } = {},
   } = appConfigs
 
   const config = defu.arrayFn(

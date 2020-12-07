@@ -1,30 +1,39 @@
 import theme from '@jsilva-pt/nuxt-content-theme-blog'
 
-const baseUrl = 'https://nuxt-blog-clone.vercel.app'
-const blogAuthor = 'José Silva'
-const name = 'NuxtJS Blog'
+const settings = {
+  baseUrl: 'https://nuxt-blog-clone.vercel.app',
+
+  githubOwner: 'jsilva-pt',
+  githubRepository: 'nuxt-content-theme-blog',
+  githubMainBranch: 'main',
+
+  twitterUsername: 'nuxt_js',
+  linkedinUsername: '',
+
+  pageNotFoundImg: '/page-not-found.png',
+}
 
 export default theme({
   feedOptions: {
     title: 'Nuxt Blog Clone',
     description: 'Articles about NuxtJS',
-    link: baseUrl,
+    link: settings.baseUrl,
   },
   publicRuntimeConfig: {
-    baseUrl,
+    ...settings,
   },
   pwa: {
     manifest: {
-      short_name: name,
+      short_name: 'NuxtJS Blog',
     },
     meta: {
-      name,
-      author: blogAuthor,
+      name: 'NuxtJS Blog',
+      author: 'José Silva',
       theme_color: '#2C3E50',
-      ogHost: baseUrl,
+      ogHost: settings.baseUrl,
       twitterCard: 'summary_large_image',
-      twitterSite: 'jmanuelsilvapt',
-      twitterCreator: 'jmanuelsilvapt',
+      twitterSite: settings.twitterUsername,
+      twitterCreator: settings.twitterUsername,
     },
   },
   i18n: {

@@ -12,13 +12,10 @@
         />
       </NuxtLink>
 
-      <div
-        v-if="$store.state.settings.social.showOnHeader"
-        class="dark:text-white flex"
-      >
+      <div v-if="$config.showSocialIconsOnHeader" class="dark:text-white flex">
         <a
-          v-if="$store.state.settings.social.linkedin"
-          :href="$store.state.settings.social.linkedin"
+          v-if="$config.linkedinUsername"
+          :href="`https://www.linkedin.com/in/${$config.linkedinUsername}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
@@ -28,8 +25,8 @@
         </a>
 
         <a
-          v-if="$store.state.settings.social.twitter"
-          :href="$store.state.settings.social.twitter"
+          v-if="$config.twitterUsername"
+          :href="`https://twitter.com/${$config.twitterUsername}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
@@ -39,8 +36,8 @@
         </a>
 
         <a
-          v-if="$store.state.settings.social.github"
-          :href="$store.state.settings.social.github"
+          v-if="$config.githubOwner"
+          :href="`https://github.com/${$config.githubOwner}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
