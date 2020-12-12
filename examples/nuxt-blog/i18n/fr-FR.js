@@ -1,7 +1,6 @@
 module.exports = {
   light: 'Lumière',
   dark: 'Sombre',
-  blog: 'Blog',
   meta: {
     title: 'Nuxt.js - Le Framework Vue.js Intuitif',
     description:
@@ -23,9 +22,6 @@ module.exports = {
     blog:
       'Vous avez commis une erreur ou souhaitez contribuer à cet article de blog ?',
     edit_on_github: 'Éditez cette page sur GitHub !',
-  },
-  blogPost: {
-    imgAlt: 'Blog Post Image',
   },
   footer: {
     links: {

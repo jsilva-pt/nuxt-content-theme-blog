@@ -40,7 +40,7 @@
       class="border-t border-light-border dark:border-dark-border my-10"
     >
       <BlogPostShare
-        v-if="$store.state.settings.social.shareEnabled"
+        v-if="$config.sharingBlogPostEnabled"
         class="mt-10 mb-5"
         :title="post.title"
         :description="post.description"

@@ -3,7 +3,7 @@
     <div
       class="bg-light-elevatedSurface dark:bg-dark-elevatedSurface shadow-nuxt transition-colors duration-300 ease-linear"
     >
-      <div class="container mx-auto px-4">
+      <div v-if="$config.footerLinks" class="container mx-auto px-4">
         <FooterLinks />
       </div>
       <div

@@ -55,7 +55,7 @@ const createFeedArticles = async (feed, { baseUrl, feedOptions }) => {
   feed.options = feedOptions
 
   const { $content } = require('@nuxt/content')
-  const blogPosts = await $content('en').sortBy('date', 'desc').fetch()
+  const blogPosts = await $content('en').sortBy('publishedTime', 'desc').fetch()
 
   blogPosts.forEach((blogPost) => {
     const url = `${baseUrl}/${blogPost.slug}`
@@ -102,12 +102,10 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
 
   css: ['~/assets/css/content.scss'],
 
-  plugins: ['~/plugins/init.js', '~/plugins/vue-observe-visibility.js'],
+  plugins: ['~/plugins/vue-observe-visibility.js'],
 
   buildModules: [
     themeModule,
-    // '@nuxtjs/eslint-module',
-    // '@nuxtjs/stylelint-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
@@ -146,7 +144,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
   },
 
   i18n: {
-    locales,
+    locales: [],
     defaultLocale,
     parsePages: false,
     lazy: false,
@@ -227,7 +225,7 @@ export default function (appConfigs) {
         },
       ],
       defaultLocale = 'en',
-    },
+    } = {},
   } = appConfigs
 
   const config = defu.arrayFn(

@@ -1,0 +1,10 @@
+{
+  "title": "Nuxt Content",
+  "url": "",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "jsilva-pt/nuxt-content-theme-blog",
+  "twitter": "jmanuelsilvapt"
+}

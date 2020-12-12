@@ -29,7 +29,7 @@ export default {
 
     const [prev, next] = await $content(lang)
       .only(['title', 'slug'])
-      .sortBy('date', 'desc')
+      .sortBy('publishedTime', 'desc')
       .surround(slug, { before: 1, after: 1 })
       .fetch()
 
@@ -59,7 +59,7 @@ export default {
   },
   computed: {
     docLink() {
-      return `${this.$store.state.settings.repository.url}blob/${this.$store.state.settings.repository.defaultBranch}/content${this.post.path}${this.post.extension}`
+      return `https://github.com/${this.$config.githubOwner}/${this.$config.githubRepository}/blob/${this.$config.githubMainBranch}/content${this.post.path}${this.post.extension}`
     },
   },
   mounted() {

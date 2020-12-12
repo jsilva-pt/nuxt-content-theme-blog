@@ -7,18 +7,23 @@
       class="container relative mx-auto px-4 flex items-center justify-between lg:py-6 h-full"
     >
       <NuxtLink to="/">
-        <Logo
+        <img v-if="$config.logo" :src="$config.logo" />
+
+        <template v-else-if="$config.logoLight && $config.logoDark">
+          <img :src="$config.logoLight" />
+          <img :src="$config.logoDark" />
+        </template>
+
+        <AppLogo
+          v-else-if="$options.components['AppLogo']"
           class="text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary transition-colors duration-300 ease-linear"
         />
       </NuxtLink>
 
-      <div
-        v-if="$store.state.settings.social.showOnHeader"
-        class="dark:text-white flex"
-      >
+      <div v-if="$config.showSocialIconsOnHeader" class="dark:text-white flex">
         <a
-          v-if="$store.state.settings.social.linkedin"
-          :href="$store.state.settings.social.linkedin"
+          v-if="$config.linkedinUsername"
+          :href="`https://www.linkedin.com/in/${$config.linkedinUsername}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
@@ -28,8 +33,8 @@
         </a>
 
         <a
-          v-if="$store.state.settings.social.twitter"
-          :href="$store.state.settings.social.twitter"
+          v-if="$config.twitterUsername"
+          :href="`https://twitter.com/${$config.twitterUsername}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"
@@ -39,8 +44,8 @@
         </a>
 
         <a
-          v-if="$store.state.settings.social.github"
-          :href="$store.state.settings.social.github"
+          v-if="$config.githubOwner"
+          :href="`https://github.com/${$config.githubOwner}`"
           target="_blank"
           class="hidden sm:block ml-3"
           rel="noopener"

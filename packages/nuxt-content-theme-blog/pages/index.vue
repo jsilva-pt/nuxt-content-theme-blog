@@ -3,17 +3,13 @@
     <div class="container mx-auto px-4 pt-16 pb-8">
       <AppWelcome v-if="$options.components['AppWelcome']" />
 
-      <template v-if="posts.length > 0">
-        <section>
-          <BlogpostPreviewItem
-            v-for="(post, index) in posts"
-            :key="index"
-            :post="post"
-          />
-        </section>
-      </template>
-
-      <AppStatus v-else code="noResults" />
+      <section>
+        <BlogpostPreviewItem
+          v-for="(post, index) in posts"
+          :key="index"
+          :post="post"
+        />
+      </section>
     </div>
   </div>
 </template>
@@ -22,9 +18,13 @@
 import { metaGeneric } from '~/utils/metaTags'
 export default {
   async asyncData({ $content, app }) {
-    const posts = await $content(app.i18n.defaultLocale)
-      .sortBy('date', 'desc')
-      .fetch()
+    let posts = []
+
+    try {
+      posts = await $content(app.i18n.defaultLocale)
+        .sortBy('publishedTime', 'desc')
+        .fetch()
+    } catch {}
 
     return {
       posts,

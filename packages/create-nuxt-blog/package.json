@@ -1,0 +1,17 @@
+{
+  "name": "create-nuxt-blog",
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "src",
+    "template"
+  ],
+  "bin": "src/cli.js",
+  "dependencies": {
+    "cac": "^6.7.1",
+    "sao": "^1.7.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

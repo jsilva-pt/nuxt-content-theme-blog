@@ -10,11 +10,9 @@
       :url="currentUrl"
       :title="title"
       :description="description"
-      :hashtags="
-        $store.state.settings.social.defaultHashtags.concat(hashtags).join(',')
-      "
+      :hashtags="shareHashtags"
       class="cursor-pointer inline-block p-3"
-      :twitter-user="$store.state.settings.social.twitter"
+      :twitter-user="$config.twitterUsername"
       :aria-label="network.id"
     >
       <component :is="network.icon" width="24" height="24" />
@@ -49,6 +47,16 @@ export default {
       ],
       currentUrl: this.$config.baseUrl + this.$route.fullPath,
     }
+  },
+  computed: {
+    shareHastags() {
+      if (this.$config.sharingDefaultHashtags) {
+        return this.$config.sharingDefaultHashtags
+          .concat(this.hashtags)
+          .join(',')
+      }
+      return this.hashtags.join(',')
+    },
   },
 }
 </script>
