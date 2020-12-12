@@ -8,7 +8,7 @@ const { version } = require('../package.json')
 
 const generator = path.resolve(__dirname, './')
 
-const cli = cac('create-nuxt-content-blog')
+const cli = cac('create-nuxt-blog')
 
 cli
   .command('[out-dir]', 'Generate in a custom directory or current directory')
@@ -16,7 +16,7 @@ cli
   .action((outDir = '.', cliOptions) => {
     const files = fs.existsSync(outDir) ? fs.readdirSync(outDir) : []
     // eslint-disable-next-line no-console
-    console.log(chalk`{cyan create-nuxt-content-blog v${version}}`)
+    console.log(chalk`{cyan create-nuxt-blog v${version}}`)
     if (files.length) {
       // eslint-disable-next-line no-console
       return console.log(

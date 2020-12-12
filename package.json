@@ -12,6 +12,7 @@
   "scripts": {
     "nuxt-blog": "nuxt examples/nuxt-blog",
     "dev:nuxt-blog": "nuxt dev examples/nuxt-blog",
+    "dev:docs": "nuxt dev docs",
     "generate:nuxt-blog": "nuxt generate examples/nuxt-blog",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",

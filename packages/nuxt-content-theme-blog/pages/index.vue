@@ -22,7 +22,7 @@ export default {
 
     try {
       posts = await $content(app.i18n.defaultLocale)
-        .sortBy('date', 'desc')
+        .sortBy('publishedTime', 'desc')
         .fetch()
     } catch {}
 

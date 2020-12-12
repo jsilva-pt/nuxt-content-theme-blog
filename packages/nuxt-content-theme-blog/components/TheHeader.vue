@@ -7,7 +7,15 @@
       class="container relative mx-auto px-4 flex items-center justify-between lg:py-6 h-full"
     >
       <NuxtLink to="/">
-        <Logo
+        <img v-if="$config.logo" :src="$config.logo" />
+
+        <template v-else-if="$config.logoLight && $config.logoDark">
+          <img :src="$config.logoLight" />
+          <img :src="$config.logoDark" />
+        </template>
+
+        <AppLogo
+          v-else-if="$options.components['AppLogo']"
           class="text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary transition-colors duration-300 ease-linear"
         />
       </NuxtLink>

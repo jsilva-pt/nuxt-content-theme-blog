@@ -29,7 +29,7 @@ export default {
 
     const [prev, next] = await $content(lang)
       .only(['title', 'slug'])
-      .sortBy('date', 'desc')
+      .sortBy('publishedTime', 'desc')
       .surround(slug, { before: 1, after: 1 })
       .fetch()
 
