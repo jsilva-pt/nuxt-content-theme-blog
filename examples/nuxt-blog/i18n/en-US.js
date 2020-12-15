@@ -18,12 +18,8 @@ module.exports = {
     blog: 'Caught a mistake or want to contribute to this blog post?',
     edit_on_github: 'Edit this page on GitHub!',
   },
-  noResults: {
-    title: 'No blog posts found!',
-    description: {
-      1: "Sorry but I haven't written any article for the criteria you inserted.",
-      2: 'If you would like me to write about a specific theme please email me the suggestion.',
-    },
+  pageNotFound: {
+    title: 'Page not found',
   },
   footer: {
     links: {

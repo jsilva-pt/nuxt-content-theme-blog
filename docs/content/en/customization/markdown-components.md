@@ -5,7 +5,7 @@ position: 22
 category: Customization
 ---
 
-To see the components available to use in the blog posts markdown files, please click [here](/getting-started/writing#components).
+To see the components available to use in the blog posts markdown files, please click [here](/guide/writing#components).
 
 ## Add new components
 

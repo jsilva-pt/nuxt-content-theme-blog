@@ -10,8 +10,6 @@ const settings = {
   twitterUsername: 'nuxt_js',
   linkedinUsername: '',
 
-  pageNotFoundImg: '/page-not-found.png',
-
   footerLinks: {
     discover: [
       {

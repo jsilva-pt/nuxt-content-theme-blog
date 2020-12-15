@@ -55,7 +55,9 @@ const createFeedArticles = async (feed, { baseUrl, feedOptions }) => {
   feed.options = feedOptions
 
   const { $content } = require('@nuxt/content')
-  const blogPosts = await $content('en').sortBy('publishedTime', 'desc').fetch()
+  const blogPosts = await $content('en', { deep: true })
+    .sortBy('publishedTime', 'desc')
+    .fetch()
 
   blogPosts.forEach((blogPost) => {
     const url = `${baseUrl}/${blogPost.slug}`
@@ -169,7 +171,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       const { $content } = require('@nuxt/content')
 
       const routes = []
-      const blogPosts = await $content('en').fetch()
+      const blogPosts = await $content('en', { deep: true }).fetch()
 
       blogPosts.forEach((blogPost) => {
         locales.forEach((locale) => {
@@ -215,17 +217,7 @@ export default function (appConfigs) {
   const {
     publicRuntimeConfig: { baseUrl },
     feedOptions,
-    i18n: {
-      locales = [
-        {
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.js',
-          name: 'English',
-        },
-      ],
-      defaultLocale = 'en',
-    } = {},
+    i18n: { locales, defaultLocale },
   } = appConfigs
 
   const config = defu.arrayFn(

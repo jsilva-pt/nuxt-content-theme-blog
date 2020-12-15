@@ -15,12 +15,12 @@ module.exports = {
       {
         name: 'appShortName',
         message: 'App Short Name:',
-        default: 'MyBlog',
+        default: 'NuxtBlog',
       },
       {
         name: 'url',
         message: 'Blog url:',
-        url: 'https://mytechblog.io',
+        url: 'https://nuxtjs.blog',
       },
       {
         name: 'author',

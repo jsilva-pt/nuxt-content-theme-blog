@@ -1,5 +1,5 @@
 ---
-title: Writting blog posts
+title: Writing blog posts
 description: ''
 position: 11
 category: Guide

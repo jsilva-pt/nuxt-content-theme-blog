@@ -7,11 +7,19 @@
       class="container relative mx-auto px-4 flex items-center justify-between lg:py-6 h-full"
     >
       <NuxtLink to="/">
-        <img v-if="$config.logo" :src="$config.logo" />
+        <img v-if="$config.logo" class="h-10 max-w-full" :src="$config.logo" />
 
         <template v-else-if="$config.logoLight && $config.logoDark">
-          <img :src="$config.logoLight" />
-          <img :src="$config.logoDark" />
+          <img
+            :src="$config.logoLight"
+            class="h-10 max-w-full light-img"
+            height="100"
+          />
+          <img
+            :src="$config.logoDark"
+            class="h-10 max-w-full dark-img"
+            height="100"
+          />
         </template>
 
         <AppLogo

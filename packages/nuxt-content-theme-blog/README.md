@@ -19,7 +19,7 @@ npx create-nuxt-blog <project-name>
 
 It's as simple as that!
 
-[📖 Read more](https://docs.nuxtjs.blog)
+[📖 Read more](https://nuxtjs.blog/)
 
 ## License
 

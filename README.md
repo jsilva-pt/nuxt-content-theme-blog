@@ -7,8 +7,8 @@
 
 > @jsilva-pt/nuxt-content-theme-blog lets you write in a content/ directory, acting as Git-based Headless CMS
 
-- [✨ &nbsp;Release Notes](https://github.com/nuxt/content/releases)
-- [📖 &nbsp;Read the documentation](https://content.nuxtjs.org)
+- [✨ &nbsp;Release Notes](https://github.com/jsilva-pt/nuxt-content-theme-blog/releases)
+- [📖 &nbsp;Read the documentation](https://nuxtjs.blog)
 
 ## Development
 

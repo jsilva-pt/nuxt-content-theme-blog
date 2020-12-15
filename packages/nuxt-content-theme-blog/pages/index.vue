@@ -21,9 +21,26 @@ export default {
     let posts = []
 
     try {
-      posts = await $content(app.i18n.defaultLocale)
+      posts = await $content(app.i18n.defaultLocale, { deep: true })
         .sortBy('publishedTime', 'desc')
         .fetch()
+
+      if (app.i18n.defaultLocale !== app.i18n.locale) {
+        try {
+          const translatedPosts = await $content(app.i18n.locale, {
+            deep: true,
+          })
+            .sortBy('publishedTime', 'desc')
+            .fetch()
+
+          posts = posts.map((post) => {
+            const translatedPost = translatedPosts.find(
+              (translatedPost) => translatedPost.slug === post.slug
+            )
+            return translatedPost || post
+          })
+        } catch {}
+      }
     } catch {}
 
     return {
