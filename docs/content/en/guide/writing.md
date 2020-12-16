@@ -7,29 +7,44 @@ category: Guide
 
 ## Folder structure
 
-You must create the blog posts inside the `content` directory and inside a folder named with the respective language code.
+You must create the blog posts inside the `content` directory.
 
 ```bash
 content/
-  en/
-    blog-post-1.md
-    blog-post-2.md
+  blog-post-1.md
+  blog-post-2.md
 ```
 
-Files outside the configured languages will be ignored.
-
-If you want, you can create subfolders to organize your blog posts inside the language code folders.
+If you have more than one language configured (example: **en** and **fr**), you can translate files by adding the language code before the file's extension.
 
 ```bash
 content/
-  en/
-    vuejs/
+  blog-post-1.md
+  blog-post-1.fr.md
+  blog-post-2.md
+  blog-post-2.fr.md
+```
+
+The file without language code represents the default language (**en**). You can have blog posts that are not translated. The blog post for the default language will be used.
+
+You can create subfolders to organize your blog posts. It is useful when you have many blog posts, translated files, or both.
+
+```bash
+content/
+  vuejs/
+    vuejs-blog-post-1/
       vuejs-blog-post-1.md
-      vuejs-blog-post-2.md
-    nuxtjs/
-      nuxtjs-blog-post-1.md
-      nuxtjs-blog-post-2.md
+      vuejs-blog-post-1.ar.md
+      vuejs-blog-post-1.es.md
+      vuejs-blog-post-1.fr.md
+    vuejs-blog-post-2.md
+    vuejs-blog-post-2.fr.md
+  nuxtjs/
+    nuxtjs-blog-post-1.md
+    nuxtjs-blog-post-2.md
 ```
+
+
 
 ## Front Matter
 

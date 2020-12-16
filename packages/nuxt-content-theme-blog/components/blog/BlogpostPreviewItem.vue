@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="localePath({ name: 'slug', params: { slug: post.slug } })"
+    :to="localePath({ name: 'slug', params: { slug: post.slugWithoutLocale } })"
     class="light:bg-light-surface dark:bg-dark-surface flex flex-col-reverse lg:flex-row mb-8 rounded p-4 sm:p-8 lg:p-4 light:hover:bg-gray-200 dark:hover:bg-gray-800 cursor-pointer transition-colors duration-300 ease-linear"
   >
     <div

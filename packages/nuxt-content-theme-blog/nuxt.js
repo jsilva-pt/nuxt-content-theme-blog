@@ -51,11 +51,15 @@ function themeModule() {
   })
 }
 
-const createFeedArticles = async (feed, { baseUrl, feedOptions }) => {
+const createFeedArticles = async (
+  feed,
+  { baseUrl, feedOptions, defaultLocale }
+) => {
   feed.options = feedOptions
 
   const { $content } = require('@nuxt/content')
-  const blogPosts = await $content('en', { deep: true })
+  const blogPosts = await $content({ deep: true })
+    .where({ locale: { $eq: defaultLocale } })
     .sortBy('publishedTime', 'desc')
     .fetch()
 
@@ -171,7 +175,9 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       const { $content } = require('@nuxt/content')
 
       const routes = []
-      const blogPosts = await $content('en', { deep: true }).fetch()
+      const blogPosts = await $content({ deep: true })
+        .where({ locale: { $eq: defaultLocale } })
+        .fetch()
 
       blogPosts.forEach((blogPost) => {
         locales.forEach((locale) => {
@@ -208,6 +214,15 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       if (item.extension === '.md') {
         const stats = require('reading-time')(item.text)
         item.readingTime = stats
+      }
+
+      const localeIndex = item.slug.indexOf('.')
+      if (localeIndex > 0) {
+        item.locale = item.slug.substring(localeIndex + 1)
+        item.slugWithoutLocale = item.slug.substring(0, localeIndex)
+      } else {
+        item.locale = defaultLocale
+        item.slugWithoutLocale = item.slug
       }
     },
   },
