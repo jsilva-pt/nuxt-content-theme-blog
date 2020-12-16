@@ -5,6 +5,9 @@ const baseUrl = '<%= url %>'
 const publicRuntimeConfig = {
   baseUrl: '<%= url %>',
 
+  logoLight: '/logo-light.svg',
+  logoDark: '/logo-dark.svg',
+
   githubOwner: '<%= githubOwner %>',
   githubRepository: '<%= githubRepository %>',
   githubMainBranch: '<%= githubMainBranch %>',
