@@ -49,7 +49,7 @@ export default {
     }
   },
   computed: {
-    shareHastags() {
+    shareHashtags() {
       if (this.$config.sharingDefaultHashtags) {
         return this.$config.sharingDefaultHashtags
           .concat(this.hashtags)
