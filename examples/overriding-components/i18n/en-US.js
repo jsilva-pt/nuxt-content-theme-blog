@@ -2,7 +2,7 @@ module.exports = {
   light: 'Light',
   dark: 'Dark',
   meta: {
-    title: '<%= title %>',
+    title: 'Blog with sections overrided',
     description: '',
   },
   contribute: {

@@ -1,5 +1,19 @@
 /* purgecss start ignore */
 /* stylelint-disable */
+.dark-mode .light-img {
+  display: none;
+}
+.dark-mode .dark-img {
+  display: block;
+}
+
+.light-mode .light-img {
+  display: block;
+}
+.light-mode .dark-img {
+  display: none;
+}
+
 .nuxt-content {
   img {
     @apply rounded;

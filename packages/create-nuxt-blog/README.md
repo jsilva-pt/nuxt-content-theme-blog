@@ -7,7 +7,7 @@
 
 > Create a blog with @jsilva-pt/nuxt-content-theme-blog in seconds
 
-- [📖 &nbsp;Read the @jsilva-pt/nuxt-content-theme-blog documentation](https://docs.nuxtjs.blog)
+- [📖 &nbsp;Read the @jsilva-pt/nuxt-content-theme-blog documentation](https://nuxtjs.blog/)
 
 ## Usage
 

@@ -18,19 +18,39 @@ export default {
   scrollToTop: true,
   async asyncData({ $content, app, params, error }) {
     const { slug } = params
-    const lang = app.i18n.defaultLocale
     let post
+    let posts
 
-    try {
-      post = await $content(lang, slug).fetch()
-    } catch {
-      return error({ statusCode: 404 })
+    let slugWithLocale = slug
+    if (app.i18n.locale !== app.i18n.defaultLocale) {
+      slugWithLocale += `.${app.i18n.locale}`
     }
 
-    const [prev, next] = await $content(lang)
+    try {
+      posts = await $content(slug, { deep: true })
+        .where({ locale: { $eq: app.i18n.locale } })
+        .fetch()
+    } catch {
+      try {
+        posts = await $content(slug, { deep: true })
+          .where({ locale: { $eq: app.i18n.defaultLocale } })
+          .fetch()
+      } catch {
+        return error({ statusCode: 404 })
+      }
+    }
+
+    if (Array.isArray(posts)) {
+      post = posts[0]
+    } else {
+      post = posts
+    }
+
+    const [prev, next] = await $content({ deep: true })
+      .where({ locale: { $eq: app.i18n.defaultLocale } })
       .only(['title', 'slug'])
       .sortBy('publishedTime', 'desc')
-      .surround(slug, { before: 1, after: 1 })
+      .surround(slugWithLocale, { before: 1, after: 1 })
       .fetch()
 
     return {

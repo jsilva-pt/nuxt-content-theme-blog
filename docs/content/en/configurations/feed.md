@@ -25,7 +25,7 @@ export default theme({
 
 ## Author(s)
 
-An article can have one or more authors. Check the [front matter authors'](/getting-started/writting#required-fields) documentation to see how to provide the right information to have the list of authors displayed in the feed.
+An article can have one or more authors. Check the [front matter authors'](/guide/writing#required-fields) documentation to see how to provide the right information to have the list of authors displayed in the feed.
 
 ## Full override
 

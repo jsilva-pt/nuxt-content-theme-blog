@@ -7,13 +7,14 @@
   },
   "workspaces": [
     "packages/*",
-    "examples/*"
+    "examples/*",
+    "docs"
   ],
   "scripts": {
-    "nuxt-blog": "nuxt examples/nuxt-blog",
-    "dev:nuxt-blog": "nuxt dev examples/nuxt-blog",
+    "nuxt-blog-clone": "nuxt examples/nuxt-blog-clone",
     "dev:docs": "nuxt dev docs",
-    "generate:nuxt-blog": "nuxt generate examples/nuxt-blog",
+    "dev:nuxt-blog-clone": "nuxt dev examples/nuxt-blog-clone",
+    "generate:nuxt-blog-clone": "nuxt generate examples/nuxt-blog-clone",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"
@@ -36,10 +37,10 @@
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "husky": "^4.3.5",
+    "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
-    "nuxt": "^2.14.11",
+    "nuxt": "^2.14.12",
     "prettier": "^2.2.1",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",

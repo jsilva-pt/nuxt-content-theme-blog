@@ -1,5 +1,5 @@
 {
-  "name": "docs",
+  "name": "overriding-components",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/content-theme-docs": "^0.8.0",
-    "@nuxtjs/google-gtag": "^1.0.4",
+    "@jsilva-pt/nuxt-content-theme-blog": "^0.2.3",
     "nuxt": "^2.14.12"
   }
 }

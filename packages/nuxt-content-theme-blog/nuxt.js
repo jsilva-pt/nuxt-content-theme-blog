@@ -51,11 +51,17 @@ function themeModule() {
   })
 }
 
-const createFeedArticles = async (feed, { baseUrl, feedOptions }) => {
+const createFeedArticles = async (
+  feed,
+  { baseUrl, feedOptions, defaultLocale }
+) => {
   feed.options = feedOptions
 
   const { $content } = require('@nuxt/content')
-  const blogPosts = await $content('en').sortBy('publishedTime', 'desc').fetch()
+  const blogPosts = await $content({ deep: true })
+    .where({ locale: { $eq: defaultLocale } })
+    .sortBy('publishedTime', 'desc')
+    .fetch()
 
   blogPosts.forEach((blogPost) => {
     const url = `${baseUrl}/${blogPost.slug}`
@@ -157,7 +163,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       create: createFeedArticles,
       cacheTime: 1000 * 60 * 15,
       type: 'rss2',
-      data: { baseUrl, feedOptions },
+      data: { baseUrl, feedOptions, defaultLocale },
     },
   ],
 
@@ -169,7 +175,9 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       const { $content } = require('@nuxt/content')
 
       const routes = []
-      const blogPosts = await $content('en').fetch()
+      const blogPosts = await $content({ deep: true })
+        .where({ locale: { $eq: defaultLocale } })
+        .fetch()
 
       blogPosts.forEach((blogPost) => {
         locales.forEach((locale) => {
@@ -207,6 +215,15 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
         const stats = require('reading-time')(item.text)
         item.readingTime = stats
       }
+
+      const localeIndex = item.slug.indexOf('.')
+      if (localeIndex > 0) {
+        item.locale = item.slug.substring(localeIndex + 1)
+        item.slugWithoutLocale = item.slug.substring(0, localeIndex)
+      } else {
+        item.locale = defaultLocale
+        item.slugWithoutLocale = item.slug
+      }
     },
   },
 })
@@ -215,17 +232,7 @@ export default function (appConfigs) {
   const {
     publicRuntimeConfig: { baseUrl },
     feedOptions,
-    i18n: {
-      locales = [
-        {
-          code: 'en',
-          iso: 'en-US',
-          file: 'en-US.js',
-          name: 'English',
-        },
-      ],
-      defaultLocale = 'en',
-    } = {},
+    i18n: { locales, defaultLocale },
   } = appConfigs
 
   const config = defu.arrayFn(

@@ -15,10 +15,5 @@ export default {
       required: true,
     },
   },
-  head() {
-    return {
-      title: this.error.message,
-    }
-  },
 }
 </script>
