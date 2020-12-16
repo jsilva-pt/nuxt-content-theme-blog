@@ -163,7 +163,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
       create: createFeedArticles,
       cacheTime: 1000 * 60 * 15,
       type: 'rss2',
-      data: { baseUrl, feedOptions },
+      data: { baseUrl, feedOptions, defaultLocale },
     },
   ],
 
