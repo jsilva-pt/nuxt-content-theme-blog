@@ -195,11 +195,11 @@ Once we have our token we can set up our `.env` file and add our token.
 NGROK_TOKEN=my-authtoken-from-ngrok
 ```
 
-<base-alert type="warning">
+<alert type="warning">
 
 Don't forget to make sure your `.env`file has been added to your `.gitignore`.
 
-</base-alert>
+</alert>
 
 We can now set a const of `options` equal to the options from the ngrok property of our `nuxt.config.js` or equal to an empty object incase we don't define any options. We also add a const of `authtoken` equal to the `NGROK_TOKEN` from our `.env` file or `options.authtoken` which is the same as `nuxt.options.ngrok.authtoken`, incase this value was defined directly in our `ngrok` property in the our `nuxt.config.js`.
 

@@ -8,44 +8,35 @@ module.exports = {
         filter: (val) => val.toLowerCase(),
       },
       {
-        name: 'title',
-        message: 'Blog title:',
-        default: 'Nuxt Content Blog',
-      },
-      {
-        name: 'appShortName',
-        message: 'App Short Name:',
-        default: 'NuxtBlog',
-      },
-      {
-        name: 'url',
-        message: 'Blog url:',
-        url: 'https://nuxtjs.blog',
-      },
-      {
         name: 'author',
-        message: 'Blog author:',
-        default: 'José Silva',
+        message: 'What is your name?',
+        default: this.gitUser.name,
+      },
+      {
+        name: 'title',
+        message: 'What is the title of your blog:',
+        default({ author }) {
+          return `${author} Blog`
+        },
       },
       {
         name: 'githubOwner',
-        message: 'GitHub owner:',
-        default: 'jsilva-pt',
+        message: 'What is your GitHub username?',
+        default: this.gitUser.username || this.gitUser.name,
+        filter: (val) => val.toLowerCase(),
+        store: true,
       },
       {
         name: 'githubRepository',
-        message: 'GitHub repository:',
+        message: 'What is your GitHub repository name?',
         default: this.outFolder,
       },
       {
-        name: 'githubMainBranch',
-        message: 'GitHub  main branch:',
-        default: 'main',
-      },
-      {
-        name: 'twitterUsername',
-        message: 'Twitter username:',
-        default: 'jmanuelsilvapt',
+        name: 'url',
+        message: 'What is the URL of your blog:',
+        default({ githubOwner }) {
+          return `https://${githubOwner}.github.io`
+        },
       },
       {
         name: 'pm',

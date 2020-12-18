@@ -81,11 +81,11 @@ npm install --save-dev @nuxtjs/color-mode
 
 Then you need to add the module to the `buildModules` section of your nuxt.config.js file.
 
-<base-alert type="info">
+<alert type="info">
 
 <b>Info:</b> If you don't have a nuxt.config.js file already you can create one in the root directory and add the code below.
 
-</base-alert>
+</alert>
 
 ```javascript{}[nuxt.config.js]
 export default {
@@ -95,11 +95,11 @@ export default {
 
 If you using a version of Nuxt.js lower than 2.9.0 you will need to add it to the `modules` property instead of `buildModules`.
 
-<base-alert type="info">
+<alert type="info">
 
 <b>Info:</b> To check what version of Nuxt.js you have you can run `yarn nuxt -v` or `npm run nuxt -v`
 
-</base-alert>
+</alert>
 
 ### Adding your colour styles
 

@@ -2,7 +2,7 @@ module.exports = {
   light: 'Light',
   dark: 'Dark',
   meta: {
-    title: '<%= title %>',
+    title: 'Default template',
     description: '',
   },
   contribute: {

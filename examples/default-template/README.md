@@ -1,17 +1,17 @@
-# <%= name %>
+# default-template
 
 ## Setup
 
 Install dependencies:
 
 ```bash
-<%= pmRun %> install
+yarn install
 ```
 
 ## Development
 
 ```bash
-<%= pmRun %> dev
+yarn dev
 ```
 
 ## Static Generation
@@ -19,9 +19,9 @@ Install dependencies:
 This will create the `dist/` directory for publishing to static hosting:
 
 ```bash
-<%= pmRun %> generate
+yarn generate
 ```
 
-To preview the static generated app, run `<%= pmRun %> start`
+To preview the static generated app, run `yarn start`
 
 For detailed explanation on how things work, checkout the [docs](https://nuxtjs.blog).

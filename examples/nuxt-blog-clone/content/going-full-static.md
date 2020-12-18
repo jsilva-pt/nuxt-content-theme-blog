@@ -79,11 +79,11 @@ export default {
 }
 ```
 
-<base-alert type="warning">
+<alert type="warning">
 
 Full static doesn't work with `ssr: 'false'` (which is the same as the deprecated `mode: 'spa'`) as this is used for client-side rendering only (Single Page Applications).
 
-</base-alert>
+</alert>
 
 Running `nuxt dev` with the static target will improve the developer experience:
 

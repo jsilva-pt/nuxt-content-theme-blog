@@ -7,7 +7,8 @@
       :key="title"
       class="flex-1 w-full sm:w-auto mb-8 sm:mb-0"
       :class="{
-        'sm:text-center': index === 1,
+        'sm:text-center':
+          index === 1 || Object.keys($config.footerLinks).length < 3,
         'sm:text-right': index === 2,
       }"
     >
