@@ -13,4 +13,14 @@ module.exports = {
   pageNotFound: {
     title: 'Page not found',
   },
+  footer: {
+    links: {
+      social: {
+        title: 'Social',
+      },
+      built: {
+        title: 'Built with',
+      },
+    },
+  },
 }

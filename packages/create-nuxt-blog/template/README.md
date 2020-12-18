@@ -24,4 +24,4 @@ This will create the `dist/` directory for publishing to static hosting:
 
 To preview the static generated app, run `<%= pmRun %> start`
 
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
+For detailed explanation on how things work, checkout the [docs](https://nuxtjs.blog).

@@ -1,4 +1,5 @@
 import theme from '@jsilva-pt/nuxt-content-theme-blog'
+import { footerLinks } from './blog.settings'
 
 const baseUrl = '<%= url %>'
 
@@ -10,9 +11,9 @@ const publicRuntimeConfig = {
 
   githubOwner: '<%= githubOwner %>',
   githubRepository: '<%= githubRepository %>',
-  githubMainBranch: '<%= githubMainBranch %>',
+  githubMainBranch: 'master',
 
-  twitterUsername: '<%= twitterUsername %>',
+  footerLinks,
 }
 
 export default theme({
@@ -24,7 +25,7 @@ export default theme({
   publicRuntimeConfig,
   pwa: {
     manifest: {
-      short_name: '<%= appShortName %>',
+      short_name: '<%= title %>',
     },
     meta: {
       author: '<%= author %>',
