@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.4.0...@jsilva-pt/nuxt-content-theme-blog@0.4.1) (2020-12-19)
+
+
+### Bug Fixes
+
+* components override ([628a4bb](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/628a4bb2da7e52b7facf1962814b939b48886177))
+
+
+
+
+
 # [0.4.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.3.0...@jsilva-pt/nuxt-content-theme-blog@0.4.0) (2020-12-19)
 
 
