@@ -13,8 +13,17 @@
   "scripts": {
     "nuxt-blog-clone": "nuxt examples/nuxt-blog-clone",
     "dev:docs": "nuxt dev docs",
+    "dev:default-template": "nuxt dev examples/default-template",
     "dev:nuxt-blog-clone": "nuxt dev examples/nuxt-blog-clone",
+    "dev:overriding-components": "nuxt dev examples/overriding-components",
+    "start:docs": "nuxt start docs",
+    "start:default-template": "nuxt start examples/default-template",
+    "start:nuxt-blog-clone": "nuxt start examples/nuxt-blog-clone",
+    "start:overriding-components": "nuxt start examples/overriding-components",
+    "generate:docs": "nuxt generate docs",
+    "generate:default-template": "nuxt generate examples/default-template",
     "generate:nuxt-blog-clone": "nuxt generate examples/nuxt-blog-clone",
+    "generate:overriding-components": "nuxt generate examples/overriding-components",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style"

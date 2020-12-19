@@ -16,22 +16,6 @@ function themeModule() {
     options.dir.static || 'static'
   )
 
-  hook('components:dirs', (dirs) => {
-    const componentsDirPath = path.resolve(options.rootDir, 'components')
-    dirs.unshift({
-      path: componentsDirPath,
-    })
-
-    const globalComponentsDirPath = path.resolve(
-      options.rootDir,
-      'components/global'
-    )
-    dirs.unshift({
-      path: globalComponentsDirPath,
-      global: true,
-    })
-  })
-
   options.tailwindcss.configPath = path.resolve(
     options.srcDir,
     'tailwind.config.js'
@@ -99,7 +83,12 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
     },
   },
 
-  components: true,
+  components: [
+    { path: '~~/components', level: 0 },
+    { path: '~~/components/global', level: 0, global: true },
+    { path: '~/components', level: 1 },
+    { path: '~/components/global', level: 1, global: true },
+  ],
 
   generate: {
     fallback: '404.html',
