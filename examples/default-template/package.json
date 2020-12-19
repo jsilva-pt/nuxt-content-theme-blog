@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@jsilva-pt/nuxt-content-theme-blog": "^0.3.0",
+    "@jsilva-pt/nuxt-content-theme-blog": "^0.4.0",
     "nuxt": "^2.14.12"
   }
 }
