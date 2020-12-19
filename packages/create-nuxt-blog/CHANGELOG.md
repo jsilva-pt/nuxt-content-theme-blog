@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.2.0...create-nuxt-blog@0.2.1) (2020-12-19)
+
+
+### Bug Fixes
+
+* **create-nuxt-blog:** global components folder. theme blog version ([a0e6d84](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/a0e6d846761cc601dce491f53f4c78f1e7f8f965))
+
+
+
+
+
 # [0.2.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.1.1...create-nuxt-blog@0.2.0) (2020-12-19)
 
 
