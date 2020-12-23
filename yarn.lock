@@ -1716,9 +1716,9 @@
     vue-svg-loader "^0.16.0"
 
 "@nuxtjs/tailwindcss@^3.2.0", "@nuxtjs/tailwindcss@^3.3.4":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.4.1.tgz#d1e1e64c4df75ddfdef09441a9157019249e689e"
-  integrity sha512-DIBtYo77qb3hX+Y0DqGVAGp+H9Wpvi+2laEQFDpTw4GBvw/4BCZ52zUYiBsH5tGaVCNBqPenGoxmnZbO68r5qQ==
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-3.4.2.tgz#2376877b7e3fff35c044e99828d5e7cacfec5621"
+  integrity sha512-Hv1b/4zYaffNc0JHss3jqKLZoPRQfG7upxGguP749Zx2VgMyFExeT3NMAxntLHctKvv/ohN+5kFGiewZGI5n2A==
   dependencies:
     "@nuxt/ufo" "^0.5.2"
     chalk "^4.1.0"
@@ -1726,7 +1726,7 @@
     consola "^2.15.0"
     defu "^3.2.2"
     fs-extra "^9.0.1"
-    tailwind-config-viewer "^1.3.1"
+    tailwind-config-viewer "^1.4.0"
     tailwindcss "^1.9.6"
 
 "@nuxtjs/youch@^4.2.3":
@@ -11572,10 +11572,10 @@ table@^6.0.3, table@^6.0.4:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
 
-tailwind-config-viewer@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/tailwind-config-viewer/-/tailwind-config-viewer-1.3.1.tgz#41776f103f850ce612256bda0c3cb48a0a6c2d09"
-  integrity sha512-M0tCdkqazXKdca+Vs06oxMRpcPnH8H2dr48BnO/LXBPzrYWi7YzdJKLafDarDlmPBT9PkZsM7UtvIQCRE4fzrg==
+tailwind-config-viewer@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/tailwind-config-viewer/-/tailwind-config-viewer-1.4.0.tgz#a1c185b647181a4e51b5d6372a748e5904de35af"
+  integrity sha512-FM4cOxHiI1cW+096XVuDEkbRfJppIXERm58QAPJK/t7+85zRpndXLF++206iNQdmVL/gKw/OI7QOp1cSxgFRAw==
   dependencies:
     "@koa/router" "^9.0.1"
     commander "^6.0.0"
