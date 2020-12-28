@@ -23,7 +23,7 @@ export function metaGeneric(title, description, url) {
   ]
 }
 
-export function metaArticle(author, publishedTime, modifiedTime) {
+export function metaArticle(author, publishedAt, modifiedTime) {
   return [
     {
       hid: 'og:type',
@@ -38,7 +38,7 @@ export function metaArticle(author, publishedTime, modifiedTime) {
     {
       hid: 'article:published_time',
       name: 'article:published_time',
-      content: publishedTime,
+      content: publishedAt,
     },
     {
       hid: 'article:modified_time',

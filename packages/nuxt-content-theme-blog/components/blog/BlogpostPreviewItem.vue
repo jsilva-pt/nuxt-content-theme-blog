@@ -5,7 +5,7 @@
   >
     <div
       class="flex flex-col justify-between pr-4"
-      :class="post.imgUrl ? 'lg:w-2/3' : 'w-full'"
+      :class="post.image ? 'lg:w-2/3' : 'w-full'"
     >
       <div class="mb-2">
         <h2
@@ -63,7 +63,7 @@
           <span
             class="light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary transition-colors duration-300 ease-linear"
           >
-            {{ formatDateByLocale(post.publishedTime) }}
+            {{ formatDateByLocale(post.publishedAt) }}
           </span>
           <span
             class="hidden lg:inline-block text-xs mx-2 light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary transition-colors duration-300 ease-linear"
@@ -79,10 +79,10 @@
       </div>
     </div>
     <div
-      v-if="post.imgUrl"
+      v-if="post.image"
       class="w-full lg:w-1/3 mb-6 lg:mb-0 rounded overflow-hidden"
     >
-      <AppImage :src="post.imgUrl" ratio="16:9" />
+      <AppImage :src="post.image" ratio="16:9" />
     </div>
   </NuxtLink>
 </template>

@@ -44,7 +44,7 @@ const createFeedArticles = async (
   const { $content } = require('@nuxt/content')
   const blogPosts = await $content({ deep: true })
     .where({ locale: { $eq: defaultLocale } })
-    .sortBy('publishedTime', 'desc')
+    .sortBy('publishedAt', 'desc')
     .fetch()
 
   blogPosts.forEach((blogPost) => {
@@ -63,7 +63,7 @@ const createFeedArticles = async (
       title: blogPost.title,
       id: url,
       link: url,
-      date: new Date(blogPost.publishedTime),
+      date: new Date(blogPost.publishedAt),
       description: blogPost.description,
       content: blogPost.description,
       author,

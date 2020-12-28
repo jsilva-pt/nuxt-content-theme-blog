@@ -1,12 +1,12 @@
 ---
 title: Footer links
 description: ''
-position: 20
+position: 22
 category: Customization
 ---
 
 <alert>
-If you want you can override completely the <b>FooterLinks.vue</b> component check the <a href="/customization/layout-components">Layout components</a> page.
+If you want you can override completely the <b>FooterLinks.vue</b> component check the <a href="/customization/components#layout-components">Layout components</a> section in the components page.
 </alert>
 
 By default, it is possible to configure lists of external links to display in the footer of the blog on every page.

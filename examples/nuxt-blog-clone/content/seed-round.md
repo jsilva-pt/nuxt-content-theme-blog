@@ -1,8 +1,8 @@
 ---
 title: "Announcing Nuxt's $2M seed round"
 description: 'Three years ago, my brother Sébastien and I were open sourcing our code to build Vue.js application server side rendered easily. Today, we are incredibly excited to announce that NuxtJS has raised $2M in seed funding.'
-imgUrl: blog/seed-round/main.png
-publishedTime: 2020-05-01
+image: blog/seed-round/main.png
+publishedAt: 2020-05-01
 authors:
   - name: Alexandre Chopin
     avatarUrl: https://pbs.twimg.com/profile_images/1255027239458091009/qMp_q8vy_400x400.jpg

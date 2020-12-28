@@ -16,15 +16,15 @@
           <div
             class="mt-1 dark:text-dark-onSurfaceSecondary light:text-light-onSurfaceSecondary"
           >
-            {{ formatDateByLocale(post.publishedTime) }}
+            {{ formatDateByLocale(post.publishedAt) }}
             <span class="text-xs mx-1">&bullet;</span>
             {{ post.readingTime.text }}
           </div>
         </div>
       </div>
       <AppImage
-        v-if="post.imgUrl"
-        :src="post.imgUrl"
+        v-if="post.image"
+        :src="post.image"
         ratio="16:9"
         sizes="80vh"
         class="rounded"

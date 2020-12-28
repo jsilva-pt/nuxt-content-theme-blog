@@ -1,8 +1,8 @@
 ---
 title: Components
 description: Alert, CodeGroup and CodeSandbox examples
-imgUrl: https://vueschool.io/media/cb103360d9341bd311b96974a83a3a91/vuejs-components-fundamentals.png
-publishedTime: 2020-12-17
+image: https://vueschool.io/media/cb103360d9341bd311b96974a83a3a91/vuejs-components-fundamentals.png
+publishedAt: 2020-12-17
 authors:
   - name: José Silva
     avatarUrl: https://pbs.twimg.com/profile_images/1120591657152536578/qsf_Hlyn_400x400.png

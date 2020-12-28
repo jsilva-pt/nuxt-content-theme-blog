@@ -49,7 +49,7 @@ export default {
     const [prev, next] = await $content({ deep: true })
       .where({ locale: { $eq: app.i18n.defaultLocale } })
       .only(['title', 'slug'])
-      .sortBy('publishedTime', 'desc')
+      .sortBy('publishedAt', 'desc')
       .surround(slugWithLocale, { before: 1, after: 1 })
       .fetch()
 
@@ -71,7 +71,7 @@ export default {
         ),
         ...metaArticle(
           this.post.author,
-          this.post.publishedTime,
+          this.post.publishedAt,
           this.post.modifiedTime
         ),
       ],

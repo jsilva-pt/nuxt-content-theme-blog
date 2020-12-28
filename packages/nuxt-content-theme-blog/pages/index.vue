@@ -23,14 +23,14 @@ export default {
     try {
       posts = await $content({ deep: true })
         .where({ locale: { $eq: app.i18n.defaultLocale } })
-        .sortBy('publishedTime', 'desc')
+        .sortBy('publishedAt', 'desc')
         .fetch()
 
       if (app.i18n.defaultLocale !== app.i18n.locale) {
         try {
           const translatedPosts = await $content({ deep: true })
             .where({ locale: { $eq: app.i18n.locale } })
-            .sortBy('publishedTime', 'desc')
+            .sortBy('publishedAt', 'desc')
             .fetch()
 
           posts = posts.map((post) => {

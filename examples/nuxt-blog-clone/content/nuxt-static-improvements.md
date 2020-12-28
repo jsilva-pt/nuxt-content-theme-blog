@@ -1,8 +1,8 @@
 ---
 title: Nuxt Static Improvements
 description: With Nuxt.js version 2.13, the full-static mode has been introduced. In addition, a new command nuxt export was added to pre-render your pages without triggering a webpack build with the goal to separate the rendering and build process. The only issue was that most Nuxt.js users weren't able to unleash the full potential of the separation... until now.
-imgUrl: blog/nuxt-static-improvements/main.jpg
-publishedTime: 2020-07-27
+image: blog/nuxt-static-improvements/main.jpg
+publishedAt: 2020-07-27
 authors:
   - name: Alexander Lichter
     avatarUrl: https://pbs.twimg.com/profile_images/1316077440414998528/mY2rcM7__400x400.jpg

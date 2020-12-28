@@ -56,7 +56,7 @@ The beginning of each blog post must start with a YAML front matter block.
 ---
 title: Blog title
 description: Blog description
-publishedTime: 2020-04-08
+publishedAt: 2020-04-08
 ---
 ```
 
@@ -73,7 +73,7 @@ publishedTime: 2020-04-08
     - `description` meta tag;
     -  Open Graph `og:description` meta tag.
 
-- `publishedTime (Datetime)`
+- `publishedAt (Datetime)`
   - The date and time when the blog post was first published. It must follow the ISO 8601 standard;
   - Used in the:
     - blog post preview card;
@@ -85,7 +85,7 @@ publishedTime: 2020-04-08
 
 ```bash
 ---
-imgUrl: blog-post-image.png
+image: blog-post-image.png
 authors:
   - name: José Silva
     avatarUrl: external url
@@ -97,7 +97,7 @@ tags:
 ---
 ```
 
-- `imgUrl (String)`
+- `image (String)`
   - The URL can be absolute (external to the blog) or relative to the `static` folder.
   - Used in the:
     - blog post preview card;
@@ -123,101 +123,3 @@ tags:
 The content of a blog post must be written in markdown. You can check the [basic syntax guide](https://www.markdownguide.org/basic-syntax) to help you master it.
 
 You can also check the [Nuxt Content documentation](https://content.nuxtjs.org/writing) to explore more advanced features.
-
-## Components
-
-The theme comes with some default Vue.js components you can use directly in your markdown content.
-
-### `<alert>`
-
-**Props**
-
-- `type`
-  - Type: `String`
-  - Default: `'info'`
-  - Values: `['info', 'success', 'warning', 'danger']`
-
-**Example**
-
-```md
-<alert>Info alert!</alert>
-```
-
-**Result**
-
-<alert>Info alert!</alert>
-
-### `<code-block>`
-
-**Props**
-
-- `label`
-  - Type: `String`
-  - `required`
-- `active`
-  - Type: `Boolean`
-  - Default: `false`
-
-**Example**
-
-```html
-# Backslashes are for demonstration
-
-<code-group>
-  <code-block label="Yarn" active>
-
-  ```bash
-  yarn add @jsilva-pt/nuxt-content-theme-blog
-  \```
-
-  </code-block>
-  <code-block label="NPM">
-
-  ```bash
-  npm install @jsilva-pt/nuxt-content-theme-blog
-  \```
-
-  </code-block>
-</code-group>
-```
-
-**Result**
-
-<code-group>
-  <code-block label="Yarn" active>
-
-  ```bash
-  yarn add @jsilva-pt/nuxt-content-theme-blog
-  ```
-
-  </code-block>
-  <code-block label="NPM">
-
-  ```bash
-  npm install @jsilva-pt/nuxt-content-theme-blog
-  ```
-
-  </code-block>
-</code-group>
-
-### `<code-sandbox>`
-
-**Props**
-
-- `src`
-  - Type: `String`
-  - `required`
-
-**Example**
-
-```md
----
-link: https://codesandbox.io/embed/nuxt-content-l164h?hidenavigation=1&theme=dark
----
-
-<code-sandbox :src="link"></code-sandbox>
-```
-
-**Result**
-
-<code-sandbox src="https://codesandbox.io/embed/nuxt-content-l164h?hidenavigation=1&theme=dark"></code-sandbox>
