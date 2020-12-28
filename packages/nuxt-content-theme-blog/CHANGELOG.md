@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.4.1...@jsilva-pt/nuxt-content-theme-blog@0.5.0) (2020-12-28)
+
+
+### Features
+
+* rename publishedTime to publishedAt and imgUrl to image. Docs improved ([dfb6ff9](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/dfb6ff946ccbb03d6391d8b7cb52aa30cb169b4a)), closes [#26](https://github.com/jsilva-pt/nuxt-content-theme-blog/issues/26)
+
+
+
+
+
 ## [0.4.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.4.0...@jsilva-pt/nuxt-content-theme-blog@0.4.1) (2020-12-19)
 
 
