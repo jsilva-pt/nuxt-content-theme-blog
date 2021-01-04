@@ -18,6 +18,8 @@ features:
   - Easily customizable
 ---
 
+<img src="/preview.png" />
+
 Create a beautiful blog in seconds ✨
 
  > Inspired in the [NuxtJS Content Theme Docs](https://content.nuxtjs.org/themes/docs) and [NuxtJS Blog](https://nuxtjs.org/blog).
