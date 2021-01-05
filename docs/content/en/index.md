@@ -18,7 +18,8 @@ features:
   - Easily customizable
 ---
 
-<img src="/preview.png" />
+<img src="/preview.png" class="light-img" />
+<img src="/preview-dark.png" class="dark-img" />
 
 Create a beautiful blog in seconds ✨
 
