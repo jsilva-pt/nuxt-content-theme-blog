@@ -12525,9 +12525,9 @@ vue-server-renderer@^2.6.12:
     source-map "0.5.6"
 
 vue-social-sharing@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/vue-social-sharing/-/vue-social-sharing-3.0.4.tgz#09d5af4872599fbf005b7ed8a52eaf926ef37eaa"
-  integrity sha512-noifuAgZIiNnsVEwGYz0kTVRdj80JkEIt1Qp1HRTLYPPQsyKVhrIMqJGVQGQjm9cp4UB51pUOxdGElMVyavvtw==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/vue-social-sharing/-/vue-social-sharing-3.0.5.tgz#b45bb70219a261786fd49b44cbad509b09af794e"
+  integrity sha512-wQWdL5SUR0amy1y5ZrHpfgrYYYFMjAKyn+81lVMeZsoKMTYESAGZC+fQSHA3ThLaFY2wtLcJ9uTkWygHVWu7XQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
