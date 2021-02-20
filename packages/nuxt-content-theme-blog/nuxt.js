@@ -85,9 +85,12 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
 
   components: [
     { path: '~~/components', level: 0 },
-    { path: '~~/components/global', level: 0, global: true },
     { path: '~/components', level: 1 },
-    { path: '~/components/global', level: 1, global: true },
+    { path: '~/components/blog', level: 1 },
+    { path: '~/components/footer', level: 1 },
+    { path: '~/components/app', level: 1 },
+    { path: '~/components/global', level: 1 },
+    { path: '~/components/icons', level: 1 },
   ],
 
   generate: {
