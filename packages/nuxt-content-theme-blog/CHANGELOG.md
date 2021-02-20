@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.5.0...@jsilva-pt/nuxt-content-theme-blog@0.6.0) (2021-02-20)
+
+
+### Bug Fixes
+
+* **deps:** bump vue-observe-visibility from 0.4.6 to 1.0.0 ([#28](https://github.com/jsilva-pt/nuxt-content-theme-blog/issues/28)) ([54fb027](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/54fb02707736503b6789270c97c69af8d27d779a))
+
+
+### Features
+
+* migration to support nuxt 2.15.0 ([8866645](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/88666452f76e97584a97aa6468d8aabe69ac3ac1))
+
+
+
+
+
 # [0.5.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/@jsilva-pt/nuxt-content-theme-blog@0.4.1...@jsilva-pt/nuxt-content-theme-blog@0.5.0) (2020-12-28)
 
 

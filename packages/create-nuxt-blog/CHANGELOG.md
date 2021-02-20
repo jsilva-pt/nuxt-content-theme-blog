@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.3.1...create-nuxt-blog@0.4.0) (2021-02-20)
+
+
+### Features
+
+* migration to support nuxt 2.15.0 ([8866645](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/88666452f76e97584a97aa6468d8aabe69ac3ac1))
+
+
+
+
+
 ## [0.3.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.3.0...create-nuxt-blog@0.3.1) (2020-12-28)
 
 
