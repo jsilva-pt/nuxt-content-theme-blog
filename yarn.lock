@@ -1169,6 +1169,31 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
+"@jsilva-pt/nuxt-content-theme-blog@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.5.0.tgz#71fcb2d108318754178e41be35c49cd256432e85"
+  integrity sha512-5af/BTcYpcl3wRbsUlYsCglcqByyV6LIShR4WENlD94ISywp2ufNMwFkD9SAAkmLLMD03ihT/bl7yuQ/cW3fKg==
+  dependencies:
+    "@nuxt/content" "^1.11.1"
+    "@nuxtjs/color-mode" "^2.0.2"
+    "@nuxtjs/feed" "^2.0.0"
+    "@nuxtjs/google-fonts" "1.2.0"
+    "@nuxtjs/pwa" "^3.3.2"
+    "@nuxtjs/robots" "^2.4.2"
+    "@nuxtjs/sitemap" "^2.4.0"
+    "@nuxtjs/svg" "^0.1.12"
+    "@nuxtjs/tailwindcss" "^3.3.4"
+    clipboard "^2.0.6"
+    core-js "^3.8.1"
+    defu "^3.2.2"
+    nuxt-i18n "^6.16.0"
+    prism-themes "^1.5.0"
+    reading-time "^1.2.1"
+    sass "^1.30.0"
+    sass-loader "^10.1.0"
+    vue-observe-visibility "^0.4.6"
+    vue-social-sharing "^3.0.4"
+
 "@koa/router@^9.0.1":
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/@koa/router/-/router-9.4.0.tgz#734b64c0ae566eb5af752df71e4143edc4748e48"
@@ -5301,10 +5326,10 @@ eslint-ast-utils@^1.1.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-prettier@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.2.0.tgz#f4a4bd2832e810e8cc7c1411ec85b3e85c0c53f9"
-  integrity sha512-rV4Qu0C3nfJKPOAhFujFxB7RMP+URFyQqqOZW9DMRD7ZDTFyjaIlETU3xzHELt++4ugC0+Jm084HQYkkJe+Ivg==
+eslint-config-prettier@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.0.0.tgz#024d661444319686c588c8849c8da33815dbdb1c"
+  integrity sha512-5EaAVPsIHu+grmm5WKjxUia4yHgRrbkd8I0ffqUSwixCPMVBrbS97UnzlEY/Q7OWo584vgixefM0kJnUfo/VjA==
 
 eslint-config-standard@^16.0.1:
   version "16.0.2"
@@ -13033,6 +13058,11 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
+
+vue-observe-visibility@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/vue-observe-visibility/-/vue-observe-visibility-0.4.6.tgz#878cb8ebcf3078e40807af29774e97105ebd519e"
+  integrity sha512-xo0CEVdkjSjhJoDdLSvoZoQrw/H2BlzB5jrCBKGZNXN2zdZgMuZ9BKrxXDjNP2AxlcCoKc8OahI3F3r3JGLv2Q==
 
 vue-observe-visibility@^1.0.0:
   version "1.0.0"
