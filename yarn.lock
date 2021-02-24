@@ -974,10 +974,10 @@
     resolve-global "1.0.0"
     yargs "^15.1.0"
 
-"@commitlint/config-conventional@^11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-11.0.0.tgz#3fa300a1b639273946de3c3f15e1cda518333422"
-  integrity sha512-SNDRsb5gLuDd2PL83yCOQX6pE7gevC79UPFx+GLbLfw6jGnnbO9/tlL76MLD8MOViqGbo7ZicjChO9Gn+7tHhA==
+"@commitlint/config-conventional@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-12.0.0.tgz#3244957b87b92dc2f4feb46059cdeb950783198f"
+  integrity sha512-zjTeCBlHEP0syW6QedRSxOiafYeuOol9vIXZ89uhKMhyejaKxdAnS3SBMN4fYiSFChsZEl+VshJeZDtUFkCd7Q==
   dependencies:
     conventional-changelog-conventionalcommits "^4.3.1"
 
@@ -1168,6 +1168,31 @@
   dependencies:
     js-yaml "^3.13.1"
     json5 "^2.1.1"
+
+"@jsilva-pt/nuxt-content-theme-blog@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@jsilva-pt/nuxt-content-theme-blog/-/nuxt-content-theme-blog-0.5.0.tgz#71fcb2d108318754178e41be35c49cd256432e85"
+  integrity sha512-5af/BTcYpcl3wRbsUlYsCglcqByyV6LIShR4WENlD94ISywp2ufNMwFkD9SAAkmLLMD03ihT/bl7yuQ/cW3fKg==
+  dependencies:
+    "@nuxt/content" "^1.11.1"
+    "@nuxtjs/color-mode" "^2.0.2"
+    "@nuxtjs/feed" "^2.0.0"
+    "@nuxtjs/google-fonts" "1.2.0"
+    "@nuxtjs/pwa" "^3.3.2"
+    "@nuxtjs/robots" "^2.4.2"
+    "@nuxtjs/sitemap" "^2.4.0"
+    "@nuxtjs/svg" "^0.1.12"
+    "@nuxtjs/tailwindcss" "^3.3.4"
+    clipboard "^2.0.6"
+    core-js "^3.8.1"
+    defu "^3.2.2"
+    nuxt-i18n "^6.16.0"
+    prism-themes "^1.5.0"
+    reading-time "^1.2.1"
+    sass "^1.30.0"
+    sass-loader "^10.1.0"
+    vue-observe-visibility "^0.4.6"
+    vue-social-sharing "^3.0.4"
 
 "@koa/router@^9.0.1":
   version "9.4.0"
@@ -13033,6 +13058,11 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
+
+vue-observe-visibility@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/vue-observe-visibility/-/vue-observe-visibility-0.4.6.tgz#878cb8ebcf3078e40807af29774e97105ebd519e"
+  integrity sha512-xo0CEVdkjSjhJoDdLSvoZoQrw/H2BlzB5jrCBKGZNXN2zdZgMuZ9BKrxXDjNP2AxlcCoKc8OahI3F3r3JGLv2Q==
 
 vue-observe-visibility@^1.0.0:
   version "1.0.0"
