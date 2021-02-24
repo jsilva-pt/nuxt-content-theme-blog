@@ -26,18 +26,24 @@ export default {
       slugWithLocale += `.${app.i18n.locale}`
     }
 
-    try {
-      posts = await $content(slug, { deep: true })
-        .where({ locale: { $eq: app.i18n.locale } })
+    posts = await $content({ deep: true })
+      .where({
+        locale: { $eq: app.i18n.locale },
+        slugWithoutLocale: { $eq: slug },
+      })
+      .fetch()
+
+    if (posts.length === 0) {
+      posts = await $content({ deep: true })
+        .where({
+          locale: { $eq: app.i18n.defaultLocale },
+          slugWithoutLocale: { $eq: slug },
+        })
         .fetch()
-    } catch {
-      try {
-        posts = await $content(slug, { deep: true })
-          .where({ locale: { $eq: app.i18n.defaultLocale } })
-          .fetch()
-      } catch {
-        return error({ statusCode: 404 })
-      }
+    }
+
+    if (posts.length === 0) {
+      return error({ statusCode: 404 })
     }
 
     if (Array.isArray(posts)) {
