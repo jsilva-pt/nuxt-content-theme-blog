@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.4.1...create-nuxt-blog@0.4.2) (2021-02-24)
+
+
+### Bug Fixes
+
+* find the right content file in the blog page ([4a9279d](https://github.com/jsilva-pt/nuxt-content-theme-blog/commit/4a9279d6e1d62cc452dc4788ea67e8c44e7feb5b)), closes [#73](https://github.com/jsilva-pt/nuxt-content-theme-blog/issues/73)
+
+
+
+
+
 ## [0.4.1](https://github.com/jsilva-pt/nuxt-content-theme-blog/compare/create-nuxt-blog@0.4.0...create-nuxt-blog@0.4.1) (2021-02-20)
 
 
