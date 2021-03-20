@@ -57,9 +57,10 @@ export default {
 .alert-success code {
   @apply bg-green-200 shadow-none border-0 text-current;
 }
-.alert-warning code {
+
+/* .alert-warning code {
   @apply bg-orange-200 shadow-none border-0 text-current;
-}
+} */
 .alert-content pre code {
   background-color: inherit !important;
 }
@@ -75,9 +76,10 @@ export default {
 .alert-success .alert-content {
   @apply text-green-700;
 }
-.alert-warning .alert-content {
+
+/* .alert-warning .alert-content {
   @apply text-orange-700;
-}
+} */
 .alert-danger .alert-content {
   @apply text-red-700;
 }
@@ -105,21 +107,24 @@ export default {
 .dark-mode .alert-success .alert-content {
   @apply text-green-300;
 }
-.alert-warning {
+
+/* .alert-warning {
   @apply bg-orange-100 border-orange-400;
-}
-.alert-warning .alert-icon {
+} */
+
+/* .alert-warning .alert-icon {
   @apply text-orange-400;
-}
+} */
 .dark-mode .alert-warning {
   @apply bg-yellow-900 border-yellow-700;
 }
 .dark-mode .alert-warning code {
   @apply bg-yellow-800;
 }
-.dark-mode .alert-warning .alert-content {
+
+/* .dark-mode .alert-warning .alert-content {
   @apply text-orange-300;
-}
+} */
 .alert-danger {
   @apply bg-red-100 border-red-400;
 }

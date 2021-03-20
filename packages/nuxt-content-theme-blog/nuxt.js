@@ -104,6 +104,7 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
 
   buildModules: [
     themeModule,
+    '@nuxt/postcss8',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
@@ -199,7 +200,9 @@ const defaultConfig = ({ baseUrl, feedOptions, locales, defaultLocale }) => ({
     Sitemap: `${baseUrl}/sitemap.xml`,
   },
 
-  tailwindcss: {},
+  tailwindcss: {
+    jit: false,
+  },
 
   hooks: {
     'content:file:beforeInsert': (item) => {
