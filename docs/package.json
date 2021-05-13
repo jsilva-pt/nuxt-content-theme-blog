@@ -11,6 +11,6 @@
   "dependencies": {
     "@nuxt/content-theme-docs": "^0.10.1",
     "@nuxtjs/google-gtag": "^1.0.4",
-    "nuxt": "2.14.12"
+    "nuxt": "2.15.6"
   }
 }
