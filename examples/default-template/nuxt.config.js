@@ -1,5 +1,5 @@
 import theme from '@jsilva-pt/nuxt-content-theme-blog'
-import { footerLinks } from './blog.settings'
+import { footerLinks, hideContributeComponent } from './blog.settings'
 
 const baseUrl = 'https://default-template.vercel.app'
 
@@ -14,6 +14,7 @@ const publicRuntimeConfig = {
   githubMainBranch: 'master',
 
   footerLinks,
+  hideContributeComponent,
 }
 
 export default theme({

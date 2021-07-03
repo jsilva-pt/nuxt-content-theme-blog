@@ -24,3 +24,5 @@ export const footerLinks = {
     },
   ],
 }
+
+export const hideContributeComponent = true
