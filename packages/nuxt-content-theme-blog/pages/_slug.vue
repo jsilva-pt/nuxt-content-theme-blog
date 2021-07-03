@@ -4,7 +4,7 @@
       <BackToList />
       <BlogpostItem :post="post" />
       <BlogpostNavigationLinks :prev="prev" :next="next" />
-      <AppContribute :doc-link="docLink" />
+      <AppContribute v-if="!$config.hideContributeComponent" :doc-link="docLink" />
     </div>
   </div>
 </template>
