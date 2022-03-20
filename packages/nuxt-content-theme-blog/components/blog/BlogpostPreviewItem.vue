@@ -73,7 +73,7 @@
           <span
             class="light:text-light-onSurfaceSecondary dark:text-dark-onSurfaceSecondary transition-colors duration-300 ease-linear"
           >
-            {{ post.readingTime.text }}
+            {{ readingTime }} {{ $t('global.readingTime') }}
           </span>
         </div>
       </div>
@@ -94,6 +94,11 @@ export default {
       type: Object,
       required: true,
     },
+  },
+  computed: {
+    readingTime() {
+      return Math.round(this.post.readingTime.minutes)
+    }
   },
   methods: {
     formatDateByLocale(d) {
