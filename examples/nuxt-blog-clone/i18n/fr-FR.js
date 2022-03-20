@@ -45,4 +45,11 @@ module.exports = {
       },
     },
   },
+  share: {
+    title: 'Partager sur'
+  },
+  global: {
+    readingTime: 'min',
+    backToBlogList: 'retour à la liste des blogs',
+  }
 }

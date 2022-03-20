@@ -43,4 +43,11 @@ module.exports = {
       },
     },
   },
+  share: {
+    title: 'Share on'
+  },
+  global: {
+    readingTime: 'min read',
+    backToBlogList: 'back to blog list',
+  }
 }
