@@ -23,4 +23,7 @@ module.exports = {
       },
     },
   },
+  share: {
+    title: 'Share on'
+  },
 }
