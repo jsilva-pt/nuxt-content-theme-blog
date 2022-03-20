@@ -3,7 +3,7 @@
     :to="localePath({ name: 'index' })"
     class="inline-flex items-center dark:hover:text-nuxt-lightgreen light:hover:text-nuxt-lightgreen dark:text-dark-onSurfaceSecondary light:text-light-onSurfaceSecondary"
   >
-    <ArrowLeftIcon class="h-5 mr-2" />back to blog list
+    <ArrowLeftIcon class="h-5 mr-2" />{{ $t('global.backToBlogList') }}
   </NuxtLink>
 </template>
 

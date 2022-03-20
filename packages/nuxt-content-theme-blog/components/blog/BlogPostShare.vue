@@ -2,7 +2,7 @@
   <div
     class="flex items-center text-light-onSurfacePrimary dark:text-dark-onSurfacePrimary"
   >
-    <div>Share on</div>
+    <div>{{ $t('share.title') }}</div>
     <ShareNetwork
       v-for="network in networks"
       :key="network.id"

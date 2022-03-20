@@ -3,12 +3,7 @@
     <div class="container mx-auto px-4 pt-16 pb-8">
       <AppWelcome v-if="$options.components['AppWelcome']" />
 
-      <section>
-        <BlogpostPreviewItem
-          v-for="(post, index) in posts"
-          :key="index"
-          :post="post"
-        />
+      <BlogPostList :posts="posts" />
       </section>
     </div>
   </div>
