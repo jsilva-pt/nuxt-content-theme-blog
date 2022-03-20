@@ -28,5 +28,6 @@ module.exports = {
   },
   global: {
     readingTime: 'min read',
+    backToBlogList: 'back to blog list',
   }
 }
