@@ -18,7 +18,7 @@
           >
             {{ formatDateByLocale(post.publishedAt) }}
             <span class="text-xs mx-1">&bullet;</span>
-            {{ post.readingTime.text }}
+            {{ readingTime }} {{ $t('global.readingTime') }}
           </div>
         </div>
       </div>
@@ -74,6 +74,9 @@ export default {
     hasTags() {
       return this.post.tags
     },
+    readingTime() {
+      return Math.round(this.post.readingTime.minutes)
+    }
   },
   methods: {
     formatDateByLocale(d) {

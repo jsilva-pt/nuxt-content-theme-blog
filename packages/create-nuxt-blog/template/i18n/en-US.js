@@ -26,4 +26,7 @@ module.exports = {
   share: {
     title: 'Share on'
   },
+  global: {
+    readingTime: 'min read',
+  }
 }
