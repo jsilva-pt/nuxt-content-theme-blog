@@ -20,7 +20,7 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/svg": "^0.1.12",
-    "@nuxtjs/tailwindcss": "^3.4.3",
+    "@nuxtjs/tailwindcss": "^6.1.2",
     "clipboard": "^2.0.8",
     "core-js": "^3.9.1",
     "defu": "^3.2.2",
